@@ -6,7 +6,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
     crossorigin="anonymous"></script>
   <!--Let browser know website is optimized for mobile-->
@@ -14,13 +15,13 @@
   <title>DJ GIO</title>
 </head>
 <body id="home" class="scrollspy">
-  <embed src ="audio/hectorlavoe.mp3" autostart= "true" loop = "true" height="0" width="0">
+  
    <!-- Navbar -->
   <div class="navbar-fixed">
-    <nav class="purple">
+    <nav class="deep-purple lighten-1">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">DJ GIO</a>
+          <a href="#" class="brand-logo"><h4>DJ GIO</h4></a>
           <a href="#" data-target="mobile-nav" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
@@ -63,25 +64,25 @@
       <li>
         <img src="images/img2.jpg">
         <!-- random image -->
-        <div class="caption center-align">
+        <div class="caption center-align grey-darken-3-text">
           <h2>Book Your Next Event</h2>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Wedding, Birthday, or any function that requires music and fun!!</h5>
+          <h5 class="light grey-text hide-on-small-only">Wedding, Birthday, or any function that requires music and fun!!</h5>
         </div>
       </li>
       <li>
         <img src="images/img3.jpg">
         <!-- random image -->
-        <div class="caption left-align">
-          <h2>We Work With All Budgets</h2>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Here to help good people have a good time at thier next event!</h5>
+        <div class="caption right-align grey-darken-3-text">
+          <h2></h2>
+          <h5 class="light grey-text hide-on-small-only"></h5>
         </div>
       </li>
       <li>
         <img src="images/img4.jpg">
         <!-- random image -->
-        <div class="caption right-align">
+        <div class="caption left-align grey-darken-3-text">
           <h2>Come Party!</h2>
-          <h5 class="light grey-text text-lighten-3 hide-on-small-only"></h5>
+          <h5 class="light grey-text hide-on-small-only"></h5>
         </div>
       </li>
     </ul>
@@ -139,13 +140,13 @@
   </section>
 
   <!-- Section: Follow -->
-  <section class="section section-follow purple darken-2 white-text center">
+  <section class="section section-follow deep-purple lighten-1white-text center">
     <div class="container">
       <div class="row">
         <div class="col s12">
           <h4>Follow DJ GIO</h4>
           <p>Follow on social media</p>
-          <a href="#" class="white-text">
+          <a href="https://www.facebook.com/DJGIO405?jazoest=26510012110254791057067120112568510571971191008973108691141011147651116778511811266701061211071074988120838011276815865100122741136786971128310165541001031219511511245113898610112245122501226874499911375109120457710610474116528781" class="white-text">
             <i class="fab fa-facebook fa-4x"></i>
           </a>
           <a href="https://www.facebook.com/DJGIO405" class="white-text">
@@ -154,7 +155,9 @@
           <a href="#" class="white-text">
             <i class="fab fa-instagram fa-4x"></i>
           </a>
-          
+          <a href="https://www.mixcloud.com/giovanni-djgio-vega/" class="white-text">
+            <i class="fab fa-mixcloud fa-4x"></i>
+          </a>
           
         </div>
       </div>
@@ -249,7 +252,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="section purple darken-2 white-text center">
+  <footer class="section deep-purple lighten-1 white-text center">
     <p class="flow-text">DJGIO &copy; 2018 </p>
   </footer>
 
@@ -270,19 +273,7 @@
       interval: 6000
     });
 
-    // Autocomplete
-    const ac = document.querySelector('.autocomplete');
-    M.Autocomplete.init(ac, {
-      data: {
-        "Aruba": null,
-        "Cancun Mexico": null,
-        "Hawaii": null,
-        "Florida": null,
-        "California": null,
-        "Jamacia": null,
-        "Europe": null,
-      }
-    });
+   
 
     // Material Boxed
     const mb = document.querySelectorAll('.materialboxed');
